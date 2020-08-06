@@ -43,7 +43,6 @@ Function Get-AuthToken($AppSecret) {
     $TenantName = "tenant.mail.onmicrosoft.com"
     Import-Module Azure
     $clientId = "00000000-0000-0000-0000-000000000000" #This is the graph API app that is in Azure AD
-    $redirectUri = "urn:ietf:wg:oauth:2.0:oob" #Not used
     $resourceAppIdURI = "https://graph.microsoft.com"
     $authority = "https://login.microsoftonline.com/$TenantName"
     $credentials = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.ClientCredential" -ArgumentList $clientId, $appSecret
