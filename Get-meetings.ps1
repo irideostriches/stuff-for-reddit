@@ -1,7 +1,7 @@
 
 #========================================================================
 # Created on  : 04/09/2019
-# Created by  : Camren Tinker
+# Created by  : 
 # Filename    : Get-Meetings.ps1
 # Version     : 1.1
 # Parameters  : 
@@ -25,7 +25,7 @@
 # - Initial script creation
 ##========================================================================
 
-$ImportPath = import-csv "C:\Temp\Mr.csv"
+$ImportPath = import-csv "C:\Temp\List_of_users.csv"
 Import-Module "\\Fileserver\Modules\Logging"
 
 #These are used in the URI to get the next 6 months worth of meetings from the user calendars starting with the current date$
